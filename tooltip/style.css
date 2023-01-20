@@ -1,0 +1,41 @@
+/* ATRIBUTOS PARA EL TEXTO DESDE DONDE EMERGE EL TOOLTIP */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted steelblue; */
+}
+
+
+/* ATRIBUTOS PARA EL TOOLTIP */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: steelblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  /* POSICION DEL TOOLTIP DENTRO DEL ESPACIO */
+  margin-left: -60px;
+}
+
+
+/* ATRIBUTOS PARA LA FLECHA */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:steelblue transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

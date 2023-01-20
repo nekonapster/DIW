@@ -3,45 +3,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-.header1 {
-  grid-area: header1;
-  text-align: center;
-  background-color: slategray;
-  color: wheat;
-}
-
-.header2 {
-    grid-area: header2;
-    text-align: center;
-    background-color: slategray;
-    color: wheat;
-}
-.section1 {
-  grid-area: section1;
-}
-.sidebar {
-  grid-area: sidebar;
-}
-.widget1 {
-  grid-area: widget1;
-}
-.widget2 {
-  grid-area: widget2;
-}
-.footer1 {
-  grid-area: footer1;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-
 .container {
   display: grid;
   grid-template:
-    "header1 header1 header1 header2 header2 header2"
+    "header1 header1 header1 header1 header1 header1"
     "section1 section1 section1 section1 sidebar sidebar"
     "widget1 widget1 widget2 widget2 sidebar sidebar"
     "footer1 footer1 footer1 footer1 footer1 footer1";
@@ -50,15 +15,160 @@ body {
   gap: 10px;
 }
 
-
-.nav-li{
-    list-style: none;
-    margin-top: 15px;
+.header1 {
+  grid-area: header1;
+  background-color: slategray;
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.h1{
+   margin-left: 20%;
+}
+
+
+/* .header2 {
+  grid-area: header2;
+  text-align: center;
+  background-color: slategray;
+  color: wheat;
+} */
+
+.nav-ul {
+  display: flex;
+  gap: 50px;
+  margin-right: 50px;
+  /* flex-direction: row; */
+  /* justify-content: space-around; */
+}
+
+.section1 {
+  grid-area: section1;
+  padding: 5px;
+}
+.sidebar {
+  grid-area: sidebar;
+  padding: 10px;
+  background-color: slategray;
+  color: wheat;
+}
+.widget1 {
+  grid-area: widget1;
+  padding: 20px;
+  background-color: slategray;
+  color: wheat;
+  text-align: center;
+}
+.widget2 {
+  grid-area: widget2;
+  padding: 20px;
+  background-color: slategray;
+  color: wheat;
+  text-align: center;
+}
+.footer1 {
+  grid-area: footer1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: slategray;
+}
+
+.material-symbols-outlined {
+  font-size: 50px;
+  padding-right: 50px;
+  color: wheat;
+}
+
+.footer1-p1 {
+  padding-left: 30px;
+  color: wheat;
+}
+
+.copy {
+  color: orange;
+}
+
+.nav-li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+/* ESTILOS PARA EL MENU DE NAVEGACION */
+.nav-li:hover {
+  border-bottom: solid 3px wheat;
+  cursor: pointer;
+}
+
+/* ESTILOS PARA EL FORMULARIO */
+.prefe {
+  border-top: solid 1px wheat;
+  border-bottom: solid 1px wheat;
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+
+.datos {
+  text-align: center;
+  background-color: wheat;
+  color: slategray;
+  padding: 25px;
+}
+
+.efectivo:hover,
+.tarjeta:hover,
+.acepto:hover {
+  cursor: pointer;
+  background-color: steelblue;
+}
+
+.acepto:visited {
+  color: red;
+}
+
+.enviar {
+  margin-top: 110px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: slategray;
+  border: solid wheat 1px;
+  color: orange;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* MOSTRAR MAS */
+
+.mostrar,
+.ocultar {
+  cursor: pointer;
+}
+
+#show,
+#hide {
+  display: none;
+}
+
+div#content {
+  display: none;
+  background-color: wheat;
+}
+
+input#show:checked ~ div#content {
+  display: block;
+}
+
+
+/* SPRITE */
+
+.sprite{
+    width: 222px;
+    height: 200px;
+    background: url('./img/2.png') no-repeat;
+    background-position:0px 0px;
 }
 

@@ -1,14 +1,26 @@
+/* COLOCACION DEL SPRITE DENTRO DE LA PANTALLA: Alterar los valores de margin-lef y margin-top para posicionarlo dentro del espacio */
+
+.container{
+    display: flex;
+    margin-left: 84%;
+    margin-top: 95%;
+}
+
+
 .sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url(./img/7up.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-github {
-    width: 30px;
-    height: 30px;
-    background-position: -5px -5px;
+  width: 30px;
+  height: 32px;
+  background-position: -5px -5px;
 }
+
+
+/* ZONA PARA AGREGAR O QUITAR MAS SPRITES */
 
 .sprite-gmail {
     width: 30px;
@@ -16,6 +28,7 @@
     background-position: -45px -5px;
 }
 
+/* 
 .sprite-linkedin {
     width: 30px;
     height: 30px;
@@ -38,4 +51,4 @@
     width: 30px;
     height: 30px;
     background-position: -85px -45px;
-}
+} */

@@ -172,3 +172,10 @@ input#show:checked ~ div#content {
     background-position:0px 0px;
 }
 
+/* MEDIAQUERY */
+
+@media (max-width: 500px) {
+ *{
+  color: red;
+ }
+}
